@@ -1,7 +1,4 @@
 pipeline:
-  build:
-    image: golang
+  test:
     commands:
-      - go get
-      - go build
-      - go test
+      - make test
