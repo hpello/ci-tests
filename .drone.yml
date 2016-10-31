@@ -1,4 +1,8 @@
-pipeline:
-  test:
-    commands:
-      - make test
+build:
+  image: ubuntu:16.04
+  commands:
+    - pwd
+    - whoami
+    - ls
+    - make test
+
