@@ -5,12 +5,10 @@
   "description": "",
   "license": "ISC",
   "dependencies": {
+    "mocha": "^5.0.4"
   },
   "scripts": {
     "start": "node ./src/server.js",
-    "generate-rsa": "mkdir -p etc && generate-rsa etc/priv.pem etc/pub.pem",
-    "pretest-unit": "npm run generate-rsa",
-    "pretest-integration": "npm run generate-rsa",
     "test": "npm run test-unit && npm run test-integration",
     "test-unit": "mocha --recursive test/unit",
     "test-integration": "mocha --recursive test/integration",
