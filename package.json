@@ -9,12 +9,14 @@
   },
   "scripts": {
     "start": "node ./src/server.js",
-    "test": "npm run test-unit && npm run test-integration",
+    "lint": "eslint .",
+    "test": "npm run lint && npm run test-unit && npm run test-integration",
     "test-unit": "mocha --recursive test/unit",
     "test-integration": "mocha --recursive test/integration",
     "dev": "nodemon --debug=5858 ./src/server.js"
   },
   "devDependencies": {
+    "eslint": "^4.19.0",
     "nodemon": "1.11.0"
   }
 }
