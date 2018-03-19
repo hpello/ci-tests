@@ -1,0 +1,45 @@
+env:
+  node: true
+  es6: true
+extends: 'eslint:recommended'
+rules:
+  # Possible Errors
+  no-console: off
+  semi-spacing: error
+  semi: error
+
+  # Best Practices
+  curly: error
+  eqeqeq:
+    - error
+  no-constant-condition:
+    - error
+    - checkLoops: false
+  # Stylistic Issues
+  block-spacing: warn
+  brace-style:
+    - warn
+    - 1tbs
+    - allowSingleLine: true
+  eol-last:
+    - warn
+  indent:
+    - warn
+    - 2
+  keyword-spacing:
+    - warn
+    - after: true
+      before: true
+  no-trailing-spaces: warn
+  space-before-blocks: warn
+  space-before-function-paren:
+    - warn
+    - anonymous: always
+      named: never
+  space-infix-ops: warn
+  object-curly-spacing:
+    - error
+    - always
+  quotes:
+    - error
+    - single
